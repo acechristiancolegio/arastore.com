@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARA Shop - Beauty Products for Girls</title>
+  <link rel="stylesheet" href="GAME.css">
+  <style>
+    /* Add your custom CSS styling here to enhance the design */
+    /* For example, you can change the font, colors, layout, etc. */
+    /* Header Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-image: url("accessoriess.jpg");
+      background-color: #e91e63;
+      background-size: cover;
+      background-position: center;
+    }
+
+    header {
+      background-color: pink;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      /* Align navigation items at the center */
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ff4081;
+    }
+
+    /* Hero Section Styles */
+    #hero {
+      background-image: url("hero-image.jpg");
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      padding: 100px 0;
+      color: #fff;
+    }
+
+    #hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      color: violet;
+    }
+
+    #hero p {
+      font-size: 24px;
+      margin-bottom: 40px;
+      color: violet;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: #ff4081;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #e91e63;
+    }
+
+    /* Featured Products Section Styles */
+    #featured-products {
+      background-color: #fff;
+      background-image: url("second.jpg");
+      background-size: cover;
+      background-position: center;
+      padding: 50px;
+      text-align: center;
+    }
+
+    #featured-products h2 {
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    .product-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .product {
+      text-align: center;
+    }
+
+    .product img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 4px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .product img:hover {
+      transform: scale(1.1);
+    }
+
+    .product-text {
+      width: 80%;
+      max-width: 400px;
+    }
+
+    .product h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .product p {
+      font-size: 16px;
+      margin-bottom: 20px;
+      color: #666;
+    }
+
+    .product-button {
+      display: inline-block;
+      background-color: #ff4081;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .product-button:hover {
+      background-color: #e91e63;
+    }
+
+    /* About Us Section Styles */
+    #about-us {
+      background-color: #f9f9f9;
+      padding: 50px;
+      text-align: center;
+    }
+
+    #about-us h2 {
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    #about-us p {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 40px;
+    }
+
+    /* Contact Us Section Styles */
+    #contact {
+      background-color: #fff;
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    #contact h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+    }
+    #contact {
+  background-color: black;
+  padding: 80px 0;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.contact-category {
+  flex: 0 0 300px;
+  background-color: pink;
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-category h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-category p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <h1>Welcome to ARA Shop</h1>
+      <p>Discover beauty products for girls</p>
+      <a href="#" class="cta-button">Shop Now</a>
+    </section>
+
+    <section id="featured-products">
+      <h2>Popular Right Now</h2>
+      <div class="product-container">
+        <div class="product">
+          <img src="lip.jpg" alt="Product 1">
+          <h3>Product 1</h3>
+          <p>Description of Product 2</p>
+          <a href="#" class="product-button">Buy Now</a>
+        </div>
+
+        <div class="product">
+          <img src="P1.jpg" alt="Product 2">
+          <h3>Product 2</h3>
+          <p>Description of Product 2</p>
+          <a href="#" class="product-button">Buy Now</a>
+        </div>
+
+        <div class="product">
+          <img src="p3.jpg" alt="Product 3">
+          <h3>Product 3</h3>
+          <p>Description of Product 3</p>
+          <a href="#" class="product-button">Buy Now</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <div class="contact-categories">
+        <div class="contact-category">
+          <h3>FIND A STORE</h3>
+          <p>Find a Ara Store  near you</p>
+        </div>
+        <div class="contact-category">
+          <h3>BECOME A MEMBER</h3>
+          <p>Learn about the benefits of becoming a Ara's member</p>
+        </div>
+        <div class="contact-category">
+          <h3>STUDENT DISCOUNTS</h3>
+          <p>Discover student discounts and offers</p>
+        </div>
+        <div class="contact-category">
+          <h3>Send Us Feedback</h3>
+          <p>Share your feedback and suggestions</p>
+        </div>
+        <div class="contact-category">
+          <h3>GET HELP</h3>
+          <p>Get assistance with your Ara products or orders</p>
+        </div>
+        <div class="contact-category">
+          <h3>Order Status</h3>
+          <p>Check the status of your order</p>
+        </div>
+        <div class="contact-category">
+          <h3>Delivery</h3>
+          <p>Information about delivery and shipping</p>
+        </div>
+        <div class="contact-category">
+          <h3>Returns</h3>
+          <p>Learn about our returns policy</p>
+        </div>
+        <div class="contact-category">
+          <h3>Payment Options</h3>
+          <p>Explore available payment options</p>
+        </div>
+        <div class="contact-category">
+          <h3>Contact Us</h3>
+          <p>Get in touch with our customer support</p>
+        </div>
+        <div class="contact-category">
+          <h3>ABOUT Ara Product</h3>
+          <p>Learn more about Nike</p>
+        </div>
+        <div class="contact-category">
+          <h3>News</h3>
+          <p>Stay updated with the latest news and releases</p>
+        </div>
+        <div class="contact-category">
+          <h3>Careers</h3>
+          <p>Explore career opportunities at Ara Product</p>
+        </div>
+        <div class="contact-category">
+          <h3>Investors</h3>
+          <p>Information for investors</p>
+        </div>
+        <div class="contact-category">
+          <h3>Sustainability</h3>
+          <p>Learn about Nike's sustainability initiatives</p>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+
+  <footer>
+    <p>&copy; 2023 ARA Shop. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
